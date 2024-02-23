@@ -1,0 +1,288 @@
+/*pagina web ColiChina*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightgray: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    box-shadow: 0 0 20px 0 #2980B9;
+    ;
+    ;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.9);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin: 0px;
+    padding: 0px;
+    width: 70px;
+    /* height: 7%; */
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-first {
+    display: flex;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+
+    justify-content: space-between;
+    margin: 6em auto 0 auto;
+    margin-top: 0.1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+.header-second {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    box-shadow: 0 0 20px 0 #2980B9;
+    width: 100%;
+    margin: 3.6em auto 0 auto;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.header-third {
+    display: flex;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    box-shadow: 0 0 20px 0 #2980B9;
+    width: 100%;
+    margin: 4.7em auto 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.contactos {
+    display: flex;
+}
+
+.contacto-item {
+    padding: 0.5rem;
+}
+
+.contacto-link {
+    color: black;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.redesociales {
+    width: 35px;
+
+}
+
+#boton-hamburguesa {
+    font-size: 0.8em;
+    height: 100%;
+    background-color: black;
+    color: white;
+    margin-right: 0.7em;
+    padding: 0.1em;
+}
+
+.animation {
+    animation-name: fadeInOut, moveLeft300px, bounce;
+    animation-duration: 15s, 15s, 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*the previous script you can replace it with
+    animation: 335 infinite alternate slidein;*/
+    font-size: 1em;
+}
+
+.barra-busqueda {
+    width: 30%;
+    margin: 0;
+    padding: 0.1rem 0.8rem;
+    border-radius: 30%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    75% {
+        font-size: 100%;
+        margin-left: 15%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.contacto-link-img {
+    width: 12%;
+}
+
+.header-third-button {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border: #182848;
+    border-radius: 15%;
+}
+
+.header-third-button:hover {
+    background-color: black;
+    transition: 0.8s;
+    color: azure;
+}
+
+.ayudanteCocina {
+    width: 20%;
+    /* margin-top: 8.2rem; */
+    padding: 0.1rem 0.8rem;
+    border-radius: 30%;
+}
+
+.contenido-img {
+    margin-top: 8.2rem;
+    color: black;
+}
+
+.cocina {
+    width: 20%;
+    /* margin-top: 8.2rem; */
+    padding: 0.1rem 0.8rem;
+    border-radius: 30%;
+}
+
+
+/* h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+} */
+
+
+/* main {
+    padding-top: 50px;
+} */
+
+.open-modal {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--white);
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 0.4rem;
+    border-radius: 5px;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    box-shadow: 0 0 20px 0 #2980B9;
+}
+
+
+/* MODAL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+    color: black;
+}
+
+.modal-dialog>* {
+    padding: 0.2rem;
+}
+
+.modal-header,
+.modal-footer {
+    background: var(--lightgray);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.modal-header .close-modal {
+    font-size: 1rem;
+}
+
+.modal p+p {
+    margin-top: 0.3rem;
+}
+
+.modal-content {
+    font-size: 0.8rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+.cocina-modal {
+    width: 50%;
+    padding: 0.1rem 0 0.2rem;
+    border-radius: 30%;
+}
+
+.barra {
+    width: 50%;
+}
