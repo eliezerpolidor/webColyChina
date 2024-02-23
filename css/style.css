@@ -123,8 +123,8 @@ a {
 }
 
 .barra-busqueda {
-    width: 25px;
-    margin-left: 10px;
+    width: 20%;
+    /* margin-left: 10px; */
     /* padding: 0.1rem 0.8rem; */
     /* border-radius: 30%; */
 }
