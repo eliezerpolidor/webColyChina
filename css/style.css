@@ -32,8 +32,8 @@ a {
     margin: 0px;
     padding: 0px;
     width: 70px;
-    /* height: 7%; */
     border-radius: 50%;
+
 }
 
 .header {
@@ -47,9 +47,9 @@ a {
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
 
-    justify-content: space-between;
-    margin: 6em auto 0 auto;
-    margin-top: 0.1em;
+    justify-content: space-evenly;
+    /* margin: 6em auto 0 auto;
+    margin-top: 0.1em; */
     width: 100%;
     position: fixed;
     top: 0;
@@ -99,7 +99,7 @@ a {
 
 .redesociales,
 .busqueda {
-    width: 35px;
+    width: 20px;
 
 }
 
