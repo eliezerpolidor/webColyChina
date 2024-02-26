@@ -185,11 +185,13 @@ a {
 }
 
 
-/* h2 {
-    border-bottom: 4px solid #dfdfe2;
+h2 {
+    border-bottom: 4px solid blueviolet;
     margin-top: 0px;
+    margin-bottom: 10px;
     padding-top: 60px;
-} */
+    font-size: 30px;
+}
 
 
 /* main {
