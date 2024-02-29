@@ -33,7 +33,7 @@ a {
     padding: 0px;
     width: 90px;
     border-radius: 50%;
-
+    line-height: 8vw;
 }
 
 .header {
@@ -100,7 +100,7 @@ a {
 
 .redesociales,
 .busqueda {
-    width: 30px;
+    width: 18px;
 
 }
 
