@@ -1,4 +1,4 @@
-/*pagina web ColiChina*/
+/*pagina web Super-Mercado*/
 
 * {
     margin: 0;
@@ -31,7 +31,7 @@ a {
 .logo {
     margin: 0px;
     padding: 0px;
-    width: 70px;
+    width: 90px;
     border-radius: 50%;
 
 }
@@ -51,6 +51,7 @@ a {
     /* margin: 6em auto 0 auto;
     margin-top: 0.1em; */
     width: 100%;
+    height: 8vw;
     position: fixed;
     top: 0;
     align-items: center;
@@ -62,7 +63,7 @@ a {
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     box-shadow: 0 0 20px 0 #2980B9;
     width: 100%;
-    margin: 3.6em auto 0 auto;
+    margin: 5.6em auto 0 auto;
     text-align: center;
     overflow: hidden;
     position: fixed;
@@ -76,7 +77,7 @@ a {
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     box-shadow: 0 0 20px 0 #2980B9;
     width: 100%;
-    margin: 4.7em auto 0 auto;
+    margin: 6.7em auto 0 auto;
     text-align: left;
     overflow: hidden;
     position: fixed;
@@ -99,7 +100,7 @@ a {
 
 .redesociales,
 .busqueda {
-    width: 20px;
+    width: 30px;
 
 }
 
