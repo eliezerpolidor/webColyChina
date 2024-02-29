@@ -29,11 +29,11 @@ a {
 }
 
 .logo {
-    margin: 0px;
+    margin-top: 10px;
     padding: 0px;
-    width: 40px;
+    width: 60px;
     border-radius: 50%;
-    line-height: 8vw;
+    /* line-height: 8vw; */
 }
 
 .header {
@@ -101,7 +101,7 @@ a {
 .redesociales,
 .busqueda {
     width: 18px;
-
+    margin-top: 10px;
 }
 
 #boton-hamburguesa {
